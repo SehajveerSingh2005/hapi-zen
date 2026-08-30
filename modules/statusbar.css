@@ -1,0 +1,10 @@
+#statuspanel {
+  margin: 10px !important;
+}
+
+#statuspanel-label {
+  border-radius: var(--border-radius-medium);
+  box-shadow: var(--mac-shadow-deep) var(--mac-shadow-deep) 0px currentColor !important;
+  border: 2px solid currentColor !important;
+  padding: 5px !important;
+}

@@ -121,7 +121,7 @@ zen-folder[collapsed] .tab-group-label-container{
   tab[selected="true"] .tab-background,
   tab[pinned="true"][selected="true"] .tab-background,
   tab[zen-essential="true"][selected="true"] .tab-background {
-    background: var(--tab-selected-bgcolor) !important;
+    background: var(--tab-background-color-selected) !important;
   }
   
   zen-folder[collapsed] .tab-group-label-container {
@@ -188,8 +188,8 @@ tab:not([pinned="true"]):not([zen-essential="true"]) .tab-background,
   #forward-button:hover,
   #stop-reload-button:hover,
   #downloads-button:hover {
-    border-color: currentColor !important;
-    box-shadow: var(--mac-shadow-soft) var(--mac-shadow-soft) 0 currentColor !important;
+    border-color: var(--macaron-outline) !important;
+    box-shadow: var(--mac-shadow-soft) var(--mac-shadow-soft) 0 var(--macaron-outline) !important;
     background: color-mix(in srgb, var(--mac-accent) 25%, transparent) !important;
   }
 
@@ -288,33 +288,33 @@ tab:not([pinned="true"]):not([zen-essential="true"]) .tab-background,
 
 /* Static URL Bar */
 :root:not([inDOMFullscreen="true"]) #urlbar:not([breakout-extend="true"]) {
-  box-shadow: var(--mac-shadow-deep) var(--mac-shadow-deep) 0px currentColor !important;
+  box-shadow: var(--mac-shadow-deep) var(--mac-shadow-deep) 0px var(--macaron-outline) !important;
 }
 #urlbar:not([breakout-extend="true"]):active,
 :root:not([inDOMFullscreen="true"]) #urlbar:not([breakout-extend="true"]):active,
 :root[zen-compact-mode="true"]:has(#titlebar) #urlbar:not([breakout-extend="true"]):active {
   transform: translate(var(--mac-shadow-deep), var(--mac-shadow-deep)) !important;
-  box-shadow: 0px 0px 0px currentColor !important;
+  box-shadow: 0px 0px 0px var(--macaron-outline) !important;
 }
 
 /* Pinned & Essential Tabs */
 tab[zen-essential="true"] .tab-background,
 tab[pinned="true"] .tab-background {
-  box-shadow: var(--mac-shadow-deep) var(--mac-shadow-deep) 0px currentColor !important;
+  box-shadow: var(--mac-shadow-deep) var(--mac-shadow-deep) 0px var(--macaron-outline) !important;
 }
 tab[zen-essential="true"]:active .tab-background,
 tab[pinned="true"]:active .tab-background {
   transform: translate(var(--mac-shadow-deep), var(--mac-shadow-deep)) !important;
-  box-shadow: 0px 0px 0px currentColor !important;
+  box-shadow: 0px 0px 0px var(--macaron-outline) !important;
 }
 tab[zen-essential="true"][selected="true"]:active .tab-background,
 tab[pinned="true"][selected="true"]:active .tab-background {
   transform: translate(var(--mac-shadow-selected-active-translate), var(--mac-shadow-selected-active-translate)) !important;
-  box-shadow: 0px 0px 0px currentColor !important;
+  box-shadow: 0px 0px 0px var(--macaron-outline) !important;
 }
 tab[selected="true"] .tab-background {
   transform: translate(var(--mac-shadow-selected-translate), var(--mac-shadow-selected-translate)) !important;
-  box-shadow: var(--mac-shadow-selected) var(--mac-shadow-selected) 0px currentColor !important;
+  box-shadow: var(--mac-shadow-selected) var(--mac-shadow-selected) 0px var(--macaron-outline) !important;
 }
 tab[pinned="true"][selected="true"] .tab-icon-stack,
 tab[pinned="true"][selected="true"] .tab-label-container,
@@ -330,15 +330,15 @@ tab[zen-essential="true"][selected="true"]:active .tab-icon-stack {
 
 /* Normal Tabs */
 tab:not([pinned="true"]):not([zen-essential="true"]) .tab-background {
-  box-shadow: var(--mac-shadow-medium) var(--mac-shadow-medium) 0px currentColor !important;
+  box-shadow: var(--mac-shadow-medium) var(--mac-shadow-medium) 0px var(--macaron-outline) !important;
 }
 tab:not([pinned="true"]):not([zen-essential="true"]):active .tab-background {
   transform: translate(var(--mac-shadow-medium), var(--mac-shadow-medium)) !important;
-  box-shadow: 0px 0px 0px currentColor !important;
+  box-shadow: 0px 0px 0px var(--macaron-outline) !important;
 }
 tab:not([pinned="true"]):not([zen-essential="true"])[selected="true"] .tab-background {
   transform: translate(var(--mac-shadow-selected-translate), var(--mac-shadow-selected-translate)) !important;
-  box-shadow: var(--mac-shadow-selected) var(--mac-shadow-selected) 0px currentColor !important;
+  box-shadow: var(--mac-shadow-selected) var(--mac-shadow-selected) 0px var(--macaron-outline) !important;
 }
 tab:not([pinned="true"]):not([zen-essential="true"])[selected="true"] .tab-content {
   transform: translate(var(--mac-shadow-selected-translate), var(--mac-shadow-selected-translate)) !important;
@@ -346,17 +346,17 @@ tab:not([pinned="true"]):not([zen-essential="true"])[selected="true"] .tab-conte
 
 /* Closed Folders */
 zen-folder[collapsed] .tab-group-label-container {
-  box-shadow: var(--mac-shadow-deep) var(--mac-shadow-deep) 0px currentColor !important;
+  box-shadow: var(--mac-shadow-deep) var(--mac-shadow-deep) 0px var(--macaron-outline) !important;
 }
 zen-folder[collapsed] .tab-group-label-container:active {
   transform: translate(var(--mac-shadow-deep), var(--mac-shadow-deep)) !important;
-  box-shadow: 0px 0px 0px currentColor !important;
+  box-shadow: 0px 0px 0px var(--macaron-outline) !important;
 }
 
 /* Open Folders */
 zen-folder:not([collapsed]) .tab-group-label-container {
   transform: translate(var(--mac-shadow-selected-translate), var(--mac-shadow-selected-translate)) !important;
-  box-shadow: var(--mac-shadow-selected) var(--mac-shadow-selected) 0px currentColor !important;
+  box-shadow: var(--mac-shadow-selected) var(--mac-shadow-selected) 0px var(--macaron-outline) !important;
 }
 zen-folder:not([collapsed]) .tab-group-label-container > .tab-group-folder-icon {
   transform: translate(var(--mac-shadow-selected-translate), var(--mac-shadow-selected-translate)) !important;
@@ -367,20 +367,20 @@ zen-folder:not([collapsed]) .tab-group-label {
 
 /* New Tab Button */
 #tabs-newtab-button {
-  box-shadow: var(--mac-shadow-deep) var(--mac-shadow-deep) 0px currentColor !important;
+  box-shadow: var(--mac-shadow-deep) var(--mac-shadow-deep) 0px var(--macaron-outline) !important;
 }
 #tabs-newtab-button:active {
   transform: translate(var(--mac-shadow-deep), var(--mac-shadow-deep)) !important;
-  box-shadow: 0px 0px 0px currentColor !important;
+  box-shadow: 0px 0px 0px var(--macaron-outline) !important;
 }
 #tabs-newtab-button[in-urlbar="true"] {
   transform: translate(var(--mac-shadow-medium), var(--mac-shadow-medium)) !important;
-  box-shadow: 0px 0px 0px currentColor !important;
+  box-shadow: 0px 0px 0px var(--macaron-outline) !important;
 }
 
 /* Floating URL Bar breakout */
 :root #urlbar[breakout][breakout-extend="true"] {
-  box-shadow: var(--mac-shadow-extra-deep) var(--mac-shadow-extra-deep) 0px currentColor !important;
+  box-shadow: var(--mac-shadow-extra-deep) var(--mac-shadow-extra-deep) 0px var(--macaron-outline) !important;
 }
 :root[zen-compact-mode="true"]:has(#titlebar:hover) #urlbar[breakout][breakout-extend="true"] {
   transform: none !important;
@@ -388,38 +388,38 @@ zen-folder:not([collapsed]) .tab-group-label {
 #urlbar[breakout][breakout-extend="true"]:active,
 :root[zen-compact-mode="true"]:has(#titlebar) #urlbar[breakout][breakout-extend="true"]:active {
   transform: translate(var(--mac-shadow-extra-deep), var(--mac-shadow-extra-deep)) !important;
-  box-shadow: 0px 0px 0px currentColor !important;
+  box-shadow: 0px 0px 0px var(--macaron-outline) !important;
 }
 
 /* URL bar view results row */
 .urlbarView-row[selected] {
-  box-shadow: var(--mac-shadow-soft) var(--mac-shadow-soft) 0px currentColor !important;
+  box-shadow: var(--mac-shadow-soft) var(--mac-shadow-soft) 0px var(--macaron-outline) !important;
 }
 
 /* Webview panel container */
 #tabbrowser-tabpanels {
-  box-shadow: var(--mac-shadow-medium) var(--mac-shadow-medium) 0 currentColor !important;
+  box-shadow: var(--mac-shadow-medium) var(--mac-shadow-medium) 0 var(--macaron-outline) !important;
 }
 :root:has(.tabbrowser-tab:active) #tabbrowser-tabpanels {
   transform: translate(var(--mac-shadow-selected-translate), var(--mac-shadow-selected-translate)) !important;
-  box-shadow: var(--mac-shadow-selected) var(--mac-shadow-selected) 0 currentColor !important;
+  box-shadow: var(--mac-shadow-selected) var(--mac-shadow-selected) 0 var(--macaron-outline) !important;
 }
 
 /* Window Control Buttons */
 .titlebar-button {
-  box-shadow: var(--mac-shadow-wc) var(--mac-shadow-wc) 0px currentColor !important;
+  box-shadow: var(--mac-shadow-wc) var(--mac-shadow-wc) 0px var(--macaron-outline) !important;
 }
 .titlebar-button:active {
   transform: translate(var(--mac-shadow-wc-active), var(--mac-shadow-wc-active)) !important;
-  box-shadow: 0px 0px 0px currentColor !important;
+  box-shadow: 0px 0px 0px var(--macaron-outline) !important;
 }
 
 /* Compact Sidebar & Hover effects */
 :root[zen-compact-mode="true"] #titlebar {
-  box-shadow: var(--mac-shadow-deep) var(--mac-shadow-deep) 0 currentColor !important;
+  box-shadow: var(--mac-shadow-deep) var(--mac-shadow-deep) 0 var(--macaron-outline) !important;
 }
 :root[zen-compact-mode="true"] #titlebar:hover {
-  box-shadow: var(--mac-shadow-selected) var(--mac-shadow-selected) 0 currentColor !important;
+  box-shadow: var(--mac-shadow-selected) var(--mac-shadow-selected) 0 var(--macaron-outline) !important;
   transform: translate(var(--mac-shadow-medium), var(--mac-shadow-medium)) !important;
 }
 :root[zen-compact-mode="true"]:has(#titlebar:hover) #urlbar {
@@ -427,12 +427,28 @@ zen-folder:not([collapsed]) .tab-group-label {
 }
 
 /* Mini Media Player */
-#zen-media-controls-toolbar {
-  box-shadow: var(--mac-shadow-selected) var(--mac-shadow-selected) 0 currentColor !important;
-  transform: translate(var(--mac-shadow-selected-translate), var(--mac-shadow-selected-translate)) !important;
-}
-#zen-media-controls-toolbar.playing {
-  box-shadow: var(--mac-shadow-medium) var(--mac-shadow-medium) 0 currentColor !important;
-  transform: translate(0px, 0px) !important;
+
+#zen-media-controls-toolbar .zen-media-card:not(.playing) {
+  box-shadow:
+    var(--mac-shadow-selected)
+    var(--mac-shadow-selected)
+    0
+    var(--macaron-outline) !important;
+
+  transform:
+    translate(
+      var(--mac-shadow-selected-translate),
+      var(--mac-shadow-selected-translate)
+    ) !important;
 }
 
+
+#zen-media-controls-toolbar .zen-media-card.playing {
+  box-shadow:
+    var(--mac-shadow-medium)
+    var(--mac-shadow-medium)
+    0
+    var(--macaron-outline) !important;
+
+  transform: translate(0, 0) !important;
+}

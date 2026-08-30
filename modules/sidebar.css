@@ -1,11 +1,12 @@
 /* -------------------------- */
 /* STATIC URL BAR (normal) */
 /* -------------------------- */
+
 :root:not([inDOMFullscreen="true"]) #urlbar:not([breakout-extend="true"]) {
-  border: 2px solid currentColor !important;
+  border: 2px solid var(--macaron-outline) !important;
   border-radius: 10px !important;
 
-  box-shadow: 4px 4px 0px currentColor !important;
+  box-shadow: 4px 4px 0px var(--macaron-outline) !important;
 
   transition: transform 0.1s ease,
               box-shadow 0.1s ease !important;
@@ -15,7 +16,7 @@
 #urlbar:not([breakout-extend="true"]):active,
 :root:not([inDOMFullscreen="true"]) #urlbar:not([breakout-extend="true"]):active {
   transform: translate(4px, 4px) !important;
-  box-shadow: 0px 0px 0px currentColor !important;
+  box-shadow: 0px 0px 0px var(--macaron-outline) !important;
 }
 
 /*to align the sidebar */
@@ -49,9 +50,9 @@ tab[zen-essential="true"] .tab-background:after{
 /* Style actual visible tab surface */
 tab[zen-essential="true"] .tab-background,
 tab[pinned="true"] .tab-background {
-  border: 2px solid currentColor !important;
+  border: 2px solid var(--macaron-outline) !important;
   border-radius: 12px !important;
-  box-shadow: 4px 4px 0px currentColor !important;
+  box-shadow: 4px 4px 0px var(--macaron-outline) !important;
   transition: transform 0.1s ease,
               box-shadow 0.1s ease !important;
 }
@@ -67,20 +68,20 @@ tab:not([zen-essential="true"])[pinned="true"]{
 tab[zen-essential="true"]:active .tab-background,
 tab[pinned="true"]:active .tab-background {
   transform: translate(4px, 4px) !important;
-  box-shadow: 0px 0px 0px currentColor !important;
+  box-shadow: 0px 0px 0px var(--macaron-outline) !important;
 }
 
 /* re-click small press effect */
 tab[zen-essential="true"][selected="true"]:active .tab-background,
 tab[pinned="true"][selected="true"]:active .tab-background {
   transform: translate(3px, 3px) !important;
-  box-shadow: 0px 0px 0px currentColor !important;
+  box-shadow: 0px 0px 0px var(--macaron-outline) !important;
 }
 
 /* Active tab pressed state */
 tab[selected="true"] .tab-background {
   transform: translate(2px, 2px) !important;
-  box-shadow: 1px 1px 0px currentColor !important;
+  box-shadow: 1px 1px 0px var(--macaron-outline) !important;
 }
 
 /* Move favicon + label together */
@@ -112,9 +113,9 @@ tab[zen-essential="true"][selected="true"]:active .tab-icon-stack {
 /* NORMAL TABS */
 /* -------------------------- */
 tab:not([pinned="true"]):not([zen-essential="true"]) .tab-background {
-  border: 2px solid currentColor !important;
+  border: 2px solid var(--macaron-outline) !important;
   border-radius: 10px !important;
-  box-shadow: 3px 3px 0px currentColor !important;
+  box-shadow: 3px 3px 0px var(--macaron-outline) !important;
   transition: transform 0.1s ease,
               box-shadow 0.1s ease !important;
   margin-bottom: 4px !important;
@@ -123,13 +124,13 @@ tab:not([pinned="true"]):not([zen-essential="true"]) .tab-background {
 /* Click */
 tab:not([pinned="true"]):not([zen-essential="true"]):active .tab-background {
   transform: translate(3px, 3px) !important;
-  box-shadow: 0px 0px 0px currentColor !important;
+  box-shadow: 0px 0px 0px var(--macaron-outline) !important;
 }
 
 /* Selected tab */
 tab:not([pinned="true"]):not([zen-essential="true"])[selected="true"] .tab-background {
   transform: translate(2px, 2px) !important;
-  box-shadow: 1px 1px 0px currentColor !important;
+  box-shadow: 1px 1px 0px var(--macaron-outline) !important;
   border-radius: 10px !important;
 }
 
@@ -149,9 +150,9 @@ zen-folder[collapsed]{
 }
 
 zen-folder[collapsed] .tab-group-label-container{
-  border: 2px solid currentColor !important;
+  border: 2px solid var(--macaron-outline) !important;
   border-radius: 12px !important;
-  box-shadow: 4px 4px 0px currentColor !important;
+  box-shadow: 4px 4px 0px var(--macaron-outline) !important;
   transition: transform 0.1s ease !important;
   margin-bottom: 4px !important;
   background: color-mix(
@@ -165,7 +166,7 @@ zen-folder[collapsed] .tab-group-label-container{
 /* Click press effect */
 zen-folder[collapsed] .tab-group-label-container:active {
   transform: translate(4px, 4px) !important;
-  box-shadow: 0px 0px 0px currentColor !important;
+  box-shadow: 0px 0px 0px var(--macaron-outline) !important;
 }
 
 zen-folder {
@@ -178,10 +179,10 @@ zen-folder {
 /* stays pressed */
 /* -------------------------- */
 zen-folder:not([collapsed]) .tab-group-label-container {
-  border: 2px solid currentColor !important;
+  border: 2px solid var(--macaron-outline) !important;
   border-radius: 12px !important;
   transform: translate(2px, 2px) !important;
-  box-shadow: 1px 1px 0px currentColor !important;
+  box-shadow: 1px 1px 0px var(--macaron-outline) !important;
 }
 
 zen-folder:not([collapsed]) .tab-group-label-container > .tab-group-folder-icon{
@@ -208,9 +209,9 @@ zen-folder:not([collapsed]) {
 /* NEW TAB BUTTON */
 /* -------------------------- */
 #tabs-newtab-button {
-  border: 2px solid currentColor !important;
+  border: 2px solid var(--macaron-outline) !important;
   border-radius: 12px !important;
-  box-shadow: 4px 4px 0px currentColor !important;
+  box-shadow: 4px 4px 0px var(--macaron-outline) !important;
   transition: transform 0.1s ease !important;
   margin-bottom: 4px !important;
 }
@@ -228,7 +229,7 @@ zen-folder:not([collapsed]) {
 /* Click press effect */
 #tabs-newtab-button[in-urlbar="true"] {
   transform: translate(3px, 3px) !important;
-  box-shadow: 0px 0px 0px currentColor !important;
+  box-shadow: 0px 0px 0px var(--macaron-outline) !important;
 }
 
 /* -------------------------- */
@@ -248,8 +249,8 @@ zen-folder:not([collapsed]) {
 /* -------------------------- */
 
 :root[zen-compact-mode="true"] #titlebar {
-  border: 2px solid currentColor !important;
-  box-shadow: 4px 4px 0 currentColor !important;
+  border: 2px solid var(--macaron-outline) !important;
+  box-shadow: 4px 4px 0 var(--macaron-outline) !important;
   border-radius: var(--zen-border-radius) !important;
 
   margin: 16px 16px 20px 16px !important;
@@ -261,7 +262,7 @@ zen-folder:not([collapsed]) {
 }
 
 :root[zen-compact-mode="true"] #titlebar:hover {
-  box-shadow: 1px 1px 0 currentColor !important;
+  box-shadow: 1px 1px 0 var(--macaron-outline) !important;
   transform: translate(3px, 3px) !important;
 }
 
@@ -279,11 +280,11 @@ zen-folder:not([collapsed]) {
 /* Ensure urlbars translate correctly on press in compact mode */
 :root[zen-compact-mode="true"]:has(#titlebar) #urlbar:not([breakout-extend="true"]):active {
   transform: translate(4px, 4px) !important;
-  box-shadow: 0px 0px 0px currentColor !important;
+  box-shadow: 0px 0px 0px var(--macaron-outline) !important;
 }
 :root[zen-compact-mode="true"]:has(#titlebar) #urlbar[breakout][breakout-extend="true"]:active {
   transform: translate(6px, 6px) !important;
-  box-shadow: 0px 0px 0px currentColor !important;
+  box-shadow: 0px 0px 0px var(--macaron-outline) !important;
 }
 
 
@@ -292,58 +293,123 @@ zen-folder:not([collapsed]) {
   padding-right: 6px !important;
 }
 
+/* -------------------------- */
 /* MINI PLAYER */
+/* -------------------------- */
 
-#zen-media-controls-toolbar .show-on-hover {
-    max-height: 50px !important;
-    padding: 5px !important;
-    margin-bottom: 0 !important;
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-    pointer-events: auto !important;
-}
 
-#zen-media-controls-toolbar{
-  border: 2px solid currentColor !important;
-  border-radius: 14px !important;
-  overflow: hidden !important;
-  padding: 8px !important;
-  margin-inline: 6px !important;
-  background: var(--zen-primary-color) !important;
-}
-
+/* Toolbar = layout container only */
 #zen-media-controls-toolbar {
-  box-shadow: 1px 1px 0 currentColor !important;
-  transform: translate(2px, 2px) !important;
+  padding: 0 !important;
+  margin: 0 !important;
+
+  border: none !important;
+  box-shadow: none !important;
+
+  background: transparent !important;
+  overflow: visible !important;
+}
+
+
+/* -------------------------- */
+/* MEDIA CARD */
+/* -------------------------- */
+
+#zen-media-controls-toolbar .zen-media-card {
+  box-sizing: border-box !important;
+
+  border: 2px solid var(--macaron-outline) !important;
+  border-radius: 14px !important;
+
+  background: var(--zen-primary-color) !important;
+
+  box-shadow: 3px 3px 0 var(--macaron-outline) !important;
+  transform: translate(0, 0) !important;
+
   transition:
     transform 0.12s ease,
     box-shadow 0.12s ease !important;
 }
 
-#zen-media-controls-toolbar.playing {
-  box-shadow: 3px 3px 0 currentColor !important;
-  transform: translate(0px, 0px) !important;
+
+/* -------------------------- */
+/* PLAYING / RESTING STATE */
+/* -------------------------- */
+
+#zen-media-controls-toolbar .zen-media-card:not(.playing) {
+  box-shadow: 1px 1px 0 var(--macaron-outline) !important;
+  transform: translate(2px, 2px) !important;
 }
 
-#zen-media-close-button {
+#zen-media-controls-toolbar .zen-media-card.playing {
+  box-shadow: 3px 3px 0 var(--macaron-outline) !important;
+  transform: translate(0, 0) !important;
+}
+
+/* -------------------------- */
+/* SHOW PLAYER CONTENT */
+/* -------------------------- */
+
+#zen-media-controls-toolbar .show-on-hover {
+  max-height: 50px !important;
+
+  padding: 5px !important;
+  margin-bottom: 0 !important;
+
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+
+  pointer-events: auto !important;
+}
+
+
+/* -------------------------- */
+/* PROGRESS */
+/* -------------------------- */
+
+#zen-media-progress-bar {
+  --progress-height: 8px !important;
+}
+
+
+/* -------------------------- */
+/* CONTROLS */
+/* -------------------------- */
+
+.zen-media-controls-hbox {
+  justify-content: center !important;
+}
+
+
+/* -------------------------- */
+/* PIP */
+/* -------------------------- */
+
+.zen-media-buttons-hbox .zen-media-pip-button {
+  display: none !important;
+}
+
+
+/* -------------------------- */
+/* CLOSE BUTTON */
+/* -------------------------- */
+
+.zen-media-close-button {
   opacity: 0 !important;
   pointer-events: none !important;
 
   transition: opacity 0.12s ease !important;
 }
 
-#zen-media-controls-toolbar:hover #zen-media-close-button {
+#zen-media-controls-toolbar:hover .zen-media-close-button {
   opacity: 1 !important;
   pointer-events: auto !important;
 }
 
-#zen-media-progress-bar{
-  --progress-height: 8px !important;
-}
 
-#zen-media-controls-hbox {
-  justify-content: center !important;
-}
+/* -------------------------- */
+/* MUTE */
+/* -------------------------- */
 
 #zen-media-mute-button {
   display: none !important;

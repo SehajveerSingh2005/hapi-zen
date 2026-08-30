@@ -72,38 +72,38 @@ tab[pinned="true"]:active .tab-background {
 }
 
 /* re-click small press effect */
-tab[zen-essential="true"][selected="true"]:active .tab-background,
-tab[pinned="true"][selected="true"]:active .tab-background {
+tab[zen-essential="true"][selected]:active .tab-background,
+tab[pinned="true"][selected]:active .tab-background {
   transform: translate(3px, 3px) !important;
   box-shadow: 0px 0px 0px var(--macaron-outline) !important;
 }
 
 /* Active tab pressed state */
-tab[selected="true"] .tab-background {
+tab[selected] .tab-background {
   transform: translate(2px, 2px) !important;
   box-shadow: 1px 1px 0px var(--macaron-outline) !important;
 }
 
 /* Move favicon + label together */
-tab[pinned="true"][selected="true"] .tab-icon-stack,
-tab[pinned="true"][selected="true"] .tab-label-container,
-tab[pinned="true"][selected="true"] .tab-reset-button{
+tab[pinned="true"][selected] .tab-icon-stack,
+tab[pinned="true"][selected] .tab-label-container,
+tab[pinned="true"][selected] .tab-reset-button{
   transform: translate(2px, 2px) !important;
 }
 
-tab[pinned="true"][zen-pinned-changed="true"]:not([zen-essential="true"])[selected="true"] .tab-icon-stack{
+tab[pinned="true"][zen-pinned-changed="true"]:not([zen-essential="true"])[selected] .tab-icon-stack{
   transform: translate(5px, -5px) !important;
 }
 
 
-tab[pinned="true"][zen-pinned-changed="true"]:not([zen-essential="true"])[selected="true"] .tab-content .tab-reset-pin-button{
+tab[pinned="true"][zen-pinned-changed="true"]:not([zen-essential="true"])[selected] .tab-content .tab-reset-pin-button{
   transform: translate(2px, 2px) !important;
 }
 
 
-tab[pinned="true"][selected="true"]:active .tab-icon-stack,
-tab[pinned="true"][selected="true"]:active .tab-label-container,
-tab[pinned="true"][selected="true"]:active .tab-reset-button,
+tab[pinned="true"][selected]:active .tab-icon-stack,
+tab[pinned="true"][selected]:active .tab-label-container,
+tab[pinned="true"][selected]:active .tab-reset-button,
 tab[zen-essential="true"][selected="true"]:active .tab-icon-stack {
   transform: translate(3px, 3px) !important;
 }
@@ -128,14 +128,14 @@ tab:not([pinned="true"]):not([zen-essential="true"]):active .tab-background {
 }
 
 /* Selected tab */
-tab:not([pinned="true"]):not([zen-essential="true"])[selected="true"] .tab-background {
+tab:not([pinned="true"]):not([zen-essential="true"])[selected] .tab-background {
   transform: translate(2px, 2px) !important;
   box-shadow: 1px 1px 0px var(--macaron-outline) !important;
   border-radius: 10px !important;
 }
 
 /* Move favicon/text slightly when selected */
-tab:not([pinned="true"]):not([zen-essential="true"])[selected="true"] .tab-content {
+tab:not([pinned="true"]):not([zen-essential="true"])[selected] .tab-content {
   transform: translate(2px, 2px) !important;
 }
 

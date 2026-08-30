@@ -302,7 +302,8 @@ zen-folder:not([collapsed]) {
 #zen-media-controls-toolbar {
   padding: 0 !important;
   margin: 0 !important;
-
+  margin-left: 3px !important;
+  margin-right: 3px !important;
   border: none !important;
   box-shadow: none !important;
 

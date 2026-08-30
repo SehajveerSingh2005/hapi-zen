@@ -95,8 +95,8 @@
 
 /* Apply accent without flattening the theme's currentColor linework. */
 tab[selected="true"] .tab-background,
-tab[pinned="true"][selected="true"] .tab-background,
-tab[zen-essential="true"][selected="true"] .tab-background,
+tab[pinned="true"][selected] .tab-background,
+tab[zen-essential="true"][selected] .tab-background,
 #zen-media-controls-toolbar.playing {
   background: var(--mac-accent) !important;
 }
@@ -116,8 +116,8 @@ zen-folder[collapsed] .tab-group-label-container {
 
   /* Restore default backgrounds for original preset */
   tab[selected="true"] .tab-background,
-  tab[pinned="true"][selected="true"] .tab-background,
-  tab[zen-essential="true"][selected="true"] .tab-background {
+  tab[pinned="true"][selected] .tab-background,
+  tab[zen-essential="true"][selected] .tab-background {
     background: var(--tab-background-color-selected) !important;
   }
 
@@ -306,27 +306,27 @@ tab[pinned="true"]:active .tab-background {
   transform: translate(var(--mac-shadow-deep), var(--mac-shadow-deep)) !important;
   box-shadow: 0px 0px 0px var(--macaron-outline) !important;
 }
-tab[zen-essential="true"][selected="true"]:active .tab-background,
-tab[pinned="true"][selected="true"]:active .tab-background {
+tab[zen-essential="true"][selected]:active .tab-background,
+tab[pinned="true"][selected]:active .tab-background {
   transform: translate(var(--mac-shadow-selected-active-translate), var(--mac-shadow-selected-active-translate)) !important;
   box-shadow: 0px 0px 0px var(--macaron-outline) !important;
 }
-tab[selected="true"] .tab-background {
+tab[selected] .tab-background {
   transform: translate(var(--mac-shadow-selected-translate), var(--mac-shadow-selected-translate)) !important;
   box-shadow: var(--mac-shadow-selected) var(--mac-shadow-selected) 0px var(--macaron-outline) !important;
 }
-tab[pinned="true"][selected="true"] .tab-icon-stack,
-tab[pinned="true"][selected="true"] .tab-label-container,
-tab[pinned="true"][selected="true"] .tab-reset-button {
+tab[pinned="true"][selected] .tab-icon-stack,
+tab[pinned="true"][selected] .tab-label-container,
+tab[pinned="true"][selected] .tab-reset-button {
   transform: translate(
     var(--mac-shadow-selected-translate),
     var(--mac-shadow-selected-translate)
   ) !important;
 }
-tab[pinned="true"][selected="true"]:active .tab-icon-stack,
-tab[pinned="true"][selected="true"]:active .tab-label-container,
-tab[pinned="true"][selected="true"]:active .tab-reset-button,
-tab[zen-essential="true"][selected="true"]:active .tab-icon-stack {
+tab[pinned="true"][selected]:active .tab-icon-stack,
+tab[pinned="true"][selected]:active .tab-label-container,
+tab[pinned="true"][selected]:active .tab-reset-button,
+tab[zen-essential="true"][selected]:active .tab-icon-stack {
   transform: translate(
     var(--mac-shadow-selected-active-translate),
     var(--mac-shadow-selected-active-translate)
@@ -341,11 +341,11 @@ tab:not([pinned="true"]):not([zen-essential="true"]):active .tab-background {
   transform: translate(var(--mac-shadow-medium), var(--mac-shadow-medium)) !important;
   box-shadow: 0px 0px 0px var(--macaron-outline) !important;
 }
-tab:not([pinned="true"]):not([zen-essential="true"])[selected="true"] .tab-background {
+tab:not([pinned="true"]):not([zen-essential="true"])[selected] .tab-background {
   transform: translate(var(--mac-shadow-selected-translate), var(--mac-shadow-selected-translate)) !important;
   box-shadow: var(--mac-shadow-selected) var(--mac-shadow-selected) 0px var(--macaron-outline) !important;
 }
-tab:not([pinned="true"]):not([zen-essential="true"])[selected="true"]
+tab:not([pinned="true"]):not([zen-essential="true"])[selected]
   .tab-content {
   transform: translate(
     var(--mac-shadow-selected-translate),

@@ -1,12 +1,12 @@
 /* window border */
 
 :root[sizemode="normal"] #zen-browser-background {
-  border: 2px solid light-dark(black, white) !important;
+  border: 2px solid light-dark(black, rgba(255,255,255,0.55)) !important;
   border-radius: var(--mac-border-radius, 8px) !important;
 }
 
 :root[sizemode="maximized"] #zen-browser-background {
-  border: 2px solid light-dark(black, white) !important;
+  border: 2px solid light-dark(black, rgba(255,255,255,0.55)) !important;
 }
 
 :root[sizemode="fullscreen"][inDOMFullscreen="true"] #tabbrowser-tabpanels {
@@ -33,9 +33,9 @@
 }
 
 #tabbrowser-tabpanels {
-  border: 2px solid currentColor !important;
+  border: 2px solid var(--macaron-outline) !important;
   border-radius: var(--zen-border-radius) !important;
-  box-shadow: 3px 3px 0 currentColor !important;
+  box-shadow: 3px 3px 0 var(--macaron-outline) !important;
   overflow: hidden !important;
   margin-right: 3px !important;
   margin-bottom: 3px !important;
@@ -75,18 +75,18 @@
 
 :root:has(.tabbrowser-tab:active) #tabbrowser-tabpanels {
   transform: translate(2px, 2px) !important;
-  box-shadow: 1px 1px 0 currentColor !important;
+  box-shadow: 1px 1px 0 var(--macaron-outline) !important;
 }
 
 /* CONTEXT MENU */
 menupopup{
-  border: 2px solid currentColor !important;
+  border: 2px solid var(--macaron-outline) !important;
   border-radius: var(--mac-border-radius, 8px) !important;
   background: var(--zen-primary-color) !important;
 }
 
 menuseparator {
-  border-top: 2px solid currentColor !important;
+  border-top: 2px solid var(--macaron-outline) !important;
 }
 
 /* -------------------------- */

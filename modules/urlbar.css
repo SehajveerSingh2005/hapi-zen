@@ -2,9 +2,9 @@
 /* FLOATING URL BAR */
 /* -------------------------- */
 #urlbar[breakout][breakout-extend="true"] {
-  border: 3px solid currentColor !important;
+  border: 3px solid var(--macaron-outline) !important;
   border-radius: 12px !important;
-  box-shadow: 6px 6px 0px currentColor !important;
+  box-shadow: 6px 6px 0px var(--macaron-outline) !important;
   transition: transform 0.1s ease,
               box-shadow 0.1s ease !important;
 }
@@ -29,13 +29,12 @@
 
 #urlbar[breakout][breakout-extend="true"]:active {
   transform: translate(6px, 6px) !important;
-  box-shadow: 0px 0px 0px currentColor !important;
+  box-shadow: 0px 0px 0px var(--macaron-outline) !important;
 }
 
 
 /* Reset inner container weirdness */
 .urlbar-input-container {
-  background: inherit !important;
   border: none !important;
   box-shadow: none !important;
 }
@@ -45,7 +44,7 @@
 }
 
 #urlbar[open] > .urlbarView > .urlbarView-body-outer {
-  border-top: 2px solid currentColor !important;
+  border-top: 2px solid var(--macaron-outline) !important;
 }
 
 
@@ -69,6 +68,6 @@
 
 /* Selected */
 .urlbarView-row[selected] {
-  border: 2px solid currentColor !important;
-  box-shadow: 2px 2px 0px currentColor !important;
+  border: 2px solid var(--macaron-outline) !important;
+  box-shadow: 2px 2px 0px var(--macaron-outline) !important;
 }

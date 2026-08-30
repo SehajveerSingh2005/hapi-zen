@@ -1,10 +1,11 @@
 /* URLBAR LOADING ANIMATION */
 
 :root:not([inDOMFullscreen="true"]) #urlbar:not([breakout-extend="true"]) {
-  background: var(--toolbar-bgcolor) !important;
+  background: var(--toolbar-background-color) !important;
   position: relative !important;
   overflow: hidden !important;
 }
+
 
 /* loading overlay */
 :root:not([inDOMFullscreen="true"]) #urlbar:not([breakout-extend="true"])::before {

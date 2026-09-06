@@ -94,7 +94,7 @@ menuseparator {
 /* -------------------------- */
 
 @media (-moz-pref("mac.blank.checkboard")) {
-    #browser:has([zen-empty-tab="true"][selected="true"]) .browserStack {
+    #main-window[zen-has-empty-tab="true"] .browserStack {
     
       background-image:
         linear-gradient(
